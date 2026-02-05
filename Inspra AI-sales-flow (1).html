@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspra AI Sales Automation Flow 2026</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container { 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 { 
+            color: #1a1a2e; 
+            margin-bottom: 10px; 
+            font-size: 42px; 
+            text-align: center;
+            animation: fadeInDown 1s ease;
+        }
+        
+        .subtitle { 
+            color: #666; 
+            text-align: center; 
+            margin-bottom: 50px; 
+            font-size: 18px;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+        
+        h2 { 
+            color: #667eea; 
+            margin: 50px 0 25px 0; 
+            padding: 15px; 
+            background: linear-gradient(135deg, #667eea15, #764ba215);
+            border-left: 5px solid #667eea;
+            font-size: 28px;
+            border-radius: 8px;
+            animation: slideInLeft 0.8s ease;
+        }
+        
+        /* HIGHLIGHTED MAIN SECTION */
+        h2.main-pipeline {
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            border-left: 8px solid #ff6b00;
+            color: #d35400;
+            font-size: 32px;
+            padding: 20px;
+            box-shadow: 0 8px 25px rgba(255, 107, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        h3 { 
+            color: #16213e; 
+            margin: 30px 0 15px 0; 
+            font-size: 22px;
+            padding-left: 10px;
+            border-left: 3px solid #764ba2;
+        }
+        
+        /* Flow Boxes with Animation */
+        .flow-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 25px 0;
+            animation: fadeInScale 0.8s ease;
+        }
+        
+        /* FACEBOOK SECTION - SPECIAL STYLING */
+        .facebook-section {
+            background: linear-gradient(135deg, #4267B2 0%, #385898 100%);
+            padding: 35px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border: 4px solid #1877f2;
+            box-shadow: 0 10px 40px rgba(66, 103, 178, 0.4);
+        }
+        
+        .facebook-section h3 {
+            color: white;
+            font-size: 24px;
+            border-left: 5px solid white;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .facebook-section p {
+            color: white;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        
+        .entry-point {
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 12px;
+            border-left: 6px solid #667eea;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            animation: slideInRight 0.8s ease;
+        }
+        
+        .entry-point:hover {
+            transform: translateX(10px);
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.3);
+        }
+        
+        .entry-point h4 {
+            color: #667eea;
+            font-size: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .entry-point h4::before {
+            content: "→";
+            margin-right: 10px;
+            font-size: 24px;
+            animation: bounceRight 2s infinite;
+        }
+        
+        .step {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 3px solid #764ba2;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .step strong {
+            color: #1a1a2e;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        /* Pipeline Boxes */
+        .pipeline {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border: 3px solid #667eea;
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.2);
+            animation: fadeInScale 0.8s ease;
+        }
+        
+        /* MAIN SALES PIPELINE - HIGHLIGHTED */
+        .pipeline.main-sales {
+            background: linear-gradient(135deg, #fffbea 0%, #fff3cd 100%);
+            border: 5px solid #ff6b00;
+            box-shadow: 0 12px 40px rgba(255, 107, 0, 0.4);
+            animation: glowPulse 3s infinite;
+        }
+        
+        .pipeline.main-sales h4 {
+            color: #d35400;
+            font-size: 26px;
+            border-bottom: 3px solid #ff6b00;
+        }
+        
+        .pipeline.main-sales .main-badge {
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            color: #d35400;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 18px;
+            display: inline-block;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
+            animation: bounce 2s infinite;
+        }
+        
+        .pipeline h4 {
+            color: #667eea;
+            font-size: 22px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #764ba2;
+        }
+        
+        .stages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .stage {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            animation: popIn 0.5s ease;
+            transition: all 0.3s ease;
+        }
+        
+        .stage:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        }
+        
+        /* HIGHLIGHTED CONFIRMATION BOX */
+        .confirmation-highlight {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border: 5px solid #1e7e34;
+            box-shadow: 0 12px 40px rgba(40, 167, 69, 0.4);
+            animation: glowPulse 3s infinite;
+        }
+        
+        .confirmation-highlight h4 {
+            color: white;
+            font-size: 26px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .confirmation-highlight .timeline-item {
+            background: rgba(255, 255, 255, 0.95);
+            color: #1a1a2e;
+        }
+        
+        /* Communication Sequences */
+        .comm-box {
+            background: linear-gradient(135deg, #667eea10, #764ba210);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border: 2px solid #667eea;
+            animation: slideInUp 0.8s ease;
+        }
+        
+        .comm-box h4 {
+            color: #667eea;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, #667eea, #764ba2);
+            animation: growDown 2s ease;
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding: 15px;
+            margin: 15px 0;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            animation: fadeInLeft 0.6s ease;
+        }
+        
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -38px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            background: #667eea;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #667eea;
+            animation: pulse 2s infinite;
+        }
+        
+        /* Team Assignments */
+        .team-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            border-left: 5px solid #764ba2;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.6s ease;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(118, 75, 162, 0.3);
+        }
+        
+        .team-card strong {
+            color: #667eea;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        /* Alert Boxes */
+        .alert {
+            background: linear-gradient(135deg, #ff6b6b15, #ee5a6f15);
+            border-left: 5px solid #ff6b6b;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 10px;
+            animation: shake 0.5s ease;
+        }
+        
+        .alert strong {
+            color: #ff6b6b;
+            font-size: 20px;
+            display: block;
+            margin-bottom: 15px;
+        }
+        
+        .alert ul {
+            margin-left: 20px;
+        }
+        
+        .alert li {
+            margin: 8px 0;
+            color: #c92a2a;
+        }
+        
+        /* Response Time Boxes */
+        .response-time-box {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+            animation: fadeInUp 0.6s ease;
+        }
+        
+        .response-time-box strong {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInScale {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes popIn {
+            0% { opacity: 0; transform: scale(0.5); }
+            50% { transform: scale(1.1); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        
+        @keyframes bounceRight {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7); }
+            50% { box-shadow: 0 0 0 10px rgba(102, 126, 234, 0); }
+        }
+        
+        @keyframes growDown {
+            from { height: 0; }
+            to { height: 100%; }
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+        
+        @keyframes glowPulse {
+            0%, 100% { box-shadow: 0 8px 30px rgba(255, 107, 0, 0.3); }
+            50% { box-shadow: 0 12px 50px rgba(255, 107, 0, 0.6); }
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        /* Print styles */
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; }
+            * { animation: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Inspra AI Sales Automation 2026</h1>
+        <p class="subtitle">Complete automated sales process with calling, email sequences, and pipeline management</p>
+
+        <!-- ========== ENTRY POINTS ========== -->
+        <h2>🚪 Lead Entry Points</h2>
+        <div class="flow-section">
+            <div class="entry-point">
+                <h4>Entry Point 1: Facebook Form Submission</h4>
+                <div class="step">
+                    <strong>Step 1:</strong> Lead submits Facebook Ad form
+                </div>
+                <div class="step">
+                    <strong>Step 2:</strong> Data flows into CRM automatically
+                </div>
+                <div class="step">
+                    <strong>Step 3:</strong> Tagged with "facebook-lead"
+                </div>
+                <div class="step">
+                    <strong>Step 4:</strong> Goes to Pipeline Stage: <strong>Form Filled</strong> in New Lead / Facebook Ads pipeline
+                </div>
+                <div class="step">
+                    <strong>Step 5:</strong> All communication sequences start automatically
+                </div>
+            </div>
+
+            <div class="entry-point">
+                <h4>Entry Point 2: AI Calling Success</h4>
+                <div class="step">
+                    <strong>Step 1:</strong> AI makes successful call and books appointment
+                </div>
+                <div class="step">
+                    <strong>Step 2:</strong> Lead details & recording saved
+                </div>
+                <div class="step">
+                    <strong>Step 3:</strong> Goes to <strong>AI Stages Pipeline</strong> → Appointment Booked
+                </div>
+                <div class="step">
+                    <strong>Step 4:</strong> Confirmation sequence triggers (2 emails + 2 SMS)
+                </div>
+                <div class="step">
+                    <strong>Step 5:</strong> Assigned to Jeremy Tuazon or Thomas William Ryan
+                </div>
+            </div>
+
+            <div class="entry-point">
+                <h4>Entry Point 3: Manual Booking (GO HIGH LEVEL)</h4>
+                <div class="step">
+                    <strong>Step 1:</strong> Appointment manually booked in system
+                </div>
+                <div class="step">
+                    <strong>Step 2:</strong> Source detected automatically (Lead Generator Name & Lead Source)
+                </div>
+                <div class="step">
+                    <strong>Step 3:</strong> Goes to <strong>Sales Pipeline</strong> → Appointment Booked
+                </div>
+                <div class="step">
+                    <strong>Step 4:</strong> Confirmation sequence triggers
+                </div>
+                <div class="step">
+                    <strong>Step 5:</strong> Assigned based on source/lead generator
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== FACEBOOK SECTION WITH RESPONSE TIMES ========== -->
+        <div class="facebook-section">
+            <h3>📱 Facebook Lead Process (Entry Point 1)</h3>
+            
+            <div class="response-time-box">
+                <strong>⚠️ CRITICAL RESPONSE TIME</strong>
+                <p>📞 Call within <strong>5-10 minutes</strong> of form submission</p>
+                <p>📧 Lead Replied: <strong>IMMEDIATELY</strong> (highest priority)</p>
+                <p>🔥 HOT LEAD: <strong>RIGHT AWAY</strong> (drop everything)</p>
+            </div>
+            
+            <div class="comm-box">
+                <h4 style="color: white;">📧 Email Sequence (9 emails over 20 days)</h4>
+                <div class="timeline">
+                    <div class="timeline-item"><strong>Email 1:</strong> After 15 minutes</div>
+                    <div class="timeline-item"><strong>Email 2:</strong> Day 2</div>
+                    <div class="timeline-item"><strong>Email 3:</strong> Day 3</div>
+                    <div class="timeline-item"><strong>Email 4:</strong> Day 5</div>
+                    <div class="timeline-item"><strong>Email 5:</strong> Day 7</div>
+                    <div class="timeline-item"><strong>Email 6:</strong> Day 10</div>
+                    <div class="timeline-item"><strong>Email 7:</strong> Day 13</div>
+                    <div class="timeline-item"><strong>Email 8:</strong> Day 16</div>
+                    <div class="timeline-item"><strong>Email 9:</strong> Day 20</div>
+                </div>
+                <p style="color: #ffe6e6; font-weight: bold; margin-top: 15px;">✅ Keep sending even if user replies - stop ONLY if appointment is booked</p>
+            </div>
+
+            <div class="comm-box">
+                <h4 style="color: white;">📱 SMS Sequence (4 messages over 5 days)</h4>
+                <div class="timeline">
+                    <div class="timeline-item"><strong>SMS 1:</strong> After 8 minutes</div>
+                    <div class="timeline-item"><strong>SMS 2:</strong> Day 2</div>
+                    <div class="timeline-item"><strong>SMS 3:</strong> Day 4</div>
+                    <div class="timeline-item"><strong>SMS 4:</strong> Day 5</div>
+                </div>
+                <p style="color: #ffe6e6; font-weight: bold; margin-top: 15px;">✅ Stop SMS if user replies YES (move to Hot Lead pipeline)</p>
+            </div>
+
+            <div class="comm-box">
+                <h4 style="color: white;">📞 Call Sequence (7 calls over 3 days)</h4>
+                <div class="timeline">
+                    <div class="timeline-item"><strong>Call 1:</strong> Instantly after opt-in</div>
+                    <div class="timeline-item"><strong>Call 2:</strong> After 2 hours</div>
+                    <div class="timeline-item"><strong>Call 3:</strong> After 3 hours</div>
+                    <div class="timeline-item"><strong>Call 4:</strong> Next day</div>
+                    <div class="timeline-item"><strong>Call 5:</strong> Same day as Call 4 with 3-4 hour gap</div>
+                    <div class="timeline-item"><strong>Call 6:</strong> 3rd day</div>
+                    <div class="timeline-item"><strong>Call 7:</strong> Same as Call 6 with 3-4 hour gap</div>
+                </div>
+                <p style="color: #ffe6e6; font-weight: bold; margin-top: 15px;">✅ Stop calling if user books appointment OR DND</p>
+            </div>
+        </div>
+
+        <!-- ========== AI CALLING ENTRY POINT ========== -->
+        <div class="flow-section">
+            <h3>🤖 AI Calling Process (Entry Point 2)</h3>
+            
+            <div class="response-time-box">
+                <strong>⚠️ RESPONSE TIME</strong>
+                <p>✅ AI books appointment automatically</p>
+                <p>📧 Confirmation sent immediately</p>
+                <p>👤 Assigned to Jeremy Tuazon or Thomas William Ryan</p>
+            </div>
+        </div>
+
+        <!-- ========== MANUAL BOOKING ========== -->
+        <div class="flow-section">
+            <h3>📝 Manual Booking Process (Entry Point 3)</h3>
+            
+            <div class="response-time-box">
+                <strong>⚠️ RESPONSE TIME</strong>
+                <p>✅ Source detected automatically</p>
+                <p>📧 Confirmation sent immediately</p>
+                <p>👤 Assigned based on Lead Generator Name</p>
+            </div>
+        </div>
+
+        <!-- ========== CONFIRMATION - HIGHLIGHTED ========== -->
+        <div class="confirmation-highlight">
+            <h4>✅ APPOINTMENT CONFIRMATION (ALL BOOKINGS)</h4>
+            <div class="timeline">
+                <div class="timeline-item"><strong>Email 1:</strong> Instantly after booking</div>
+                <div class="timeline-item"><strong>SMS 1:</strong> Instantly after booking</div>
+                <div class="timeline-item"><strong>Email 2:</strong> 1 day before appointment</div>
+                <div class="timeline-item"><strong>SMS 2:</strong> 1 hour before appointment</div>
+            </div>
+        </div>
+
+        <!-- ========== PIPELINES ========== -->
+        <h2>🔄 The 3 Pipelines</h2>
+
+        <div class="pipeline">
+            <h4>Pipeline 1: New Lead / Facebook Ads</h4>
+            <p><strong>Purpose:</strong> Nurture Facebook leads through automated sequences until appointment is booked</p>
+            <div class="stages">
+                <span class="stage">Form Filled</span>
+                <span class="stage">1st Call</span>
+                <span class="stage">2nd Call</span>
+                <span class="stage">3rd Call</span>
+                <span class="stage">4th Call</span>
+                <span class="stage">5th Call</span>
+                <span class="stage">6th Call</span>
+                <span class="stage">7th Call</span>
+                <span class="stage">Lead Replied</span>
+                <span class="stage">Hot Lead</span>
+                <span class="stage">Appointment Booked</span>
+                <span class="stage">Bad Data Stage</span>
+                <span class="stage">Non Qualified Stage</span>
+                <span class="stage">DND</span>
+            </div>
+        </div>
+
+        <div class="pipeline main-sales">
+            <div class="main-badge">🌟 THESE ARE THE MAIN STAGES 🌟</div>
+            <h4>Pipeline 2: Sales Pipeline</h4>
+            <p><strong>Purpose:</strong> Manage complete sales process from booking to close</p>
+            <div class="stages">
+                <span class="stage">Appointment Booked</span>
+                <span class="stage">Callback to Book Appointment</span>
+                <span class="stage">Follow Up</span>
+                <span class="stage">Proposal Sent</span>
+                <span class="stage">Awaiting Feedback / More Info Sent</span>
+                <span class="stage">2nd Level / Post Demo / Decision Call</span>
+                <span class="stage">2nd call No Show</span>
+                <span class="stage">No Answer / Voicemail</span>
+                <span class="stage">Rescheduled</span>
+                <span class="stage">Cancelled</span>
+                <span class="stage">Sale</span>
+                <span class="stage">Closed Lost (Not Interested / Non Qualified)</span>
+                <span class="stage">Dead / Unresponsive</span>
+                <span class="stage">No Show</span>
+                <span class="stage">Show</span>
+            </div>
+            <p style="margin-top: 20px;"><strong>Recovery Windows:</strong> No Show & Cancelled = 48 hours</p>
+            <p><strong>Follow-ups:</strong> Proposal (Day 2 & 4), 90-Day Reactivation for Closed Lost</p>
+        </div>
+
+        <div class="pipeline">
+            <h4>Pipeline 3: AI Stages</h4>
+            <p><strong>Purpose:</strong> Handle AI-generated appointments with confirmation workflow</p>
+            <div class="stages">
+                <span class="stage">AI Appointment Set</span>
+                <span class="stage">Confirmation Sent</span>
+                <span class="stage">Confirmed</span>
+                <span class="stage">Ready for Meeting</span>
+            </div>
+            <p style="margin-top: 20px;"><strong>Confirmation:</strong> 2 Emails + 2 SMS (instant, 24hrs, 1hr before)</p>
+            <p><strong>Team:</strong> Jeremy Tuazon / Thomas William Ryan</p>
+        </div>
+
+        <!-- ========== TEAM ASSIGNMENTS ========== -->
+        <h2>👥 Team Assignments (Based on Source)</h2>
+
+        <div class="team-card">
+            <strong>AI Appointments</strong>
+            <p>Assigned to: <strong>Jeremy Tuazon</strong> / <strong>Thomas William Ryan</strong></p>
+            <p>All appointments booked via AI calling system</p>
+        </div>
+
+        <div class="team-card">
+            <strong>No Shows</strong>
+            <p>Assigned to: <strong>Gerard Downes</strong> / <strong>James Tran</strong></p>
+            <p style="color: #e74c3c; font-weight: bold;">Must be contacted within 48 hours</p>
+        </div>
+
+        <div class="team-card">
+            <strong>Cancellations</strong>
+            <p>Assigned to: <strong>Riya Gupta</strong> / <strong>Gerard Downes</strong> / <strong>Angelique Combis</strong></p>
+            <p style="color: #e74c3c; font-weight: bold;">Immediate reschedule attempt within 48 hours</p>
+        </div>
+
+        <div class="team-card">
+            <strong>Source-Based Assignments</strong>
+            <p>Based on Lead Generator Name:</p>
+            <ul style="margin-top: 10px;">
+                <li>James Tran → Cold Calling Dialler</li>
+                <li>James Dando → Cold Calling Manual</li>
+                <li>Angelique Combis → FB Lead</li>
+                <li>Gerard Downes → (various sources)</li>
+                <li>Riya Gupta → Inspra Bot</li>
+            </ul>
+        </div>
+
+        <!-- ========== COMPLETE FLOW ========== -->
+        <h2>🔄 Complete Process Flow</h2>
+        <div class="flow-section">
+            <div class="entry-point">
+                <h4>Step 1: Lead Enters System</h4>
+                <p>Via Facebook form, AI call, or manual booking → Tagged with source</p>
+            </div>
+            <div class="entry-point">
+                <h4>Step 2: Enters Correct Pipeline</h4>
+                <p>Facebook → Form Filled | AI Call → AI Stages | Manual → Sales Pipeline</p>
+            </div>
+            <div class="entry-point">
+                <h4>Step 3: Automation Begins</h4>
+                <p>Facebook Only: Email (9 over 20 days) + SMS (4 over 5 days) + Calls (7 over 3 days)</p>
+            </div>
+            <div class="entry-point">
+                <h4>Step 4: Appointment Booked</h4>
+                <p>All sequences STOP → Confirmation workflow starts → Team assigned</p>
+            </div>
+            <div class="entry-point">
+                <h4>Step 5: Meeting Outcome</h4>
+                <p>Show → Sales stages | No Show → Recovery (48hrs) | Cancelled → Reschedule (48hrs)</p>
+            </div>
+            <div class="entry-point">
+                <h4>Step 6: Sales Process</h4>
+                <p>Proposal sent → Follow-ups (Day 2 & 4) → Negotiation → Close (Won/Lost)</p>
+            </div>
+            <div class="entry-point">
+                <h4>Step 7: Post-Close</h4>
+                <p>Won → Onboarding | Lost → 90-day reactivation sequence</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
